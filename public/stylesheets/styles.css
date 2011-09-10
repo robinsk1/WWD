@@ -2070,8 +2070,8 @@ fieldset #commenter {
 
 #slider {
     position:relative;
-    width:700px; /* Change this to your images width */
-    height:300px; /* Change this to your images height */
+    width:940px; /* Change this to your images width */
+    height:200px; /* Change this to your images height */
     background:url(/images/ajax-loader.gif) no-repeat 50% 50%;
 }
 #slider img {
