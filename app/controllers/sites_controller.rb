@@ -6,10 +6,10 @@ class SitesController < ApplicationController
   def activities
   end
 
-  def house
+  def news
   end
 
-  def area
+  def photos
   end
 
   def contact

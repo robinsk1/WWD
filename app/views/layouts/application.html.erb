@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cuatrovientos</title>
+  <title>WorldWhiskyDay</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :all %>
   <%= csrf_meta_tag %>
@@ -13,13 +13,19 @@
 <div class="grid_12" style="height:30px;"></div>
 <div class="clear"></div>
 
-<div class="grid_10" style="min-height:60px;"><%= link_to image_tag('/images/logo2.png'), index_path %></div>
+<div class="grid_10" style="min-height:60px;">
+<%#= link_to image_tag('/images/logo2.png'), index_path %>
+<h1 class="fontface">World Whisky Day</h1>
+</div>
 <div class="grid_2 lang_menu">
-  <%= link_to "ESP", root_path(:locale => 'es') %> |  <%= link_to 'ENG',  root_path(:locale => 'en') %>
+ <!-- <%#= link_to "ESP", root_path(:locale => 'es') %> |  <%#= link_to 'ENG',  root_path(:locale => 'en') %> -->
 </div>
 <div class="clear"></div>
   <%= render :partial => 'layouts/header' %>
   <%= render :partial => 'sites/slider' %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
    <%= yield %>
 </div>
 </div>

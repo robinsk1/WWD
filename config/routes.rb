@@ -1,6 +1,10 @@
 Wwd::Application.routes.draw do
 
-   scope "(:locale)", :locale => /en|es/ do
+  devise_for :admins
+
+  resources :posts
+
+  scope "(:locale)", :locale => /en|es/ do
     match '/:locale' => 'sites#index'
     root :to => 'sites#index'
 
@@ -10,8 +14,8 @@ Wwd::Application.routes.draw do
     get :events
     get :contact
     get :activities
-    get :area
-    get :house
+    get :news
+    get :photos
   end
   end
   # The priority is based upon order of creation:
@@ -70,4 +74,5 @@ Wwd::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+
 end
