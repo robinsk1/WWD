@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+class Admin::PostsController < Admin::ApplicationController
   
   before_filter :authenticate_admin!
   # GET /posts

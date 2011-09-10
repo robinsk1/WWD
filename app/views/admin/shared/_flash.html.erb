@@ -1,0 +1,6 @@
+<%= raw("<div class='notice' id='flash'>" + flash[:notice] + "</div>") if flash[:notice]%>
+<%= raw("<div class='error' id='flash'>" + flash[:error] + "</div>") if flash[:error] %>
+<%= raw("<div class='error' id='flash'>" + flash[:flash_model_errors] + "</div>") if flash[:flash_model_errors] %>
+<script type="text/javascript">
+	new Effect.Fade("flash",  { duration: 7.0 });
+</script>		

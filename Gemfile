@@ -18,6 +18,11 @@ gem "oa-oauth", :require => "omniauth/oauth"
 gem "ckeditor"
 gem "formtastic"
 gem "unicorn"
+gem 'sass'
+gem 'coffee-script'
+gem 'uglifier'
+
+
 
 
 

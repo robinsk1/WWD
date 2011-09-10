@@ -1,14 +1,18 @@
 Wwd::Application.routes.draw do
 
-  devise_for :admins
+  devise_for :admins do
+    get "/login", :to => "devise/sessions#new"
+    get "/logout", :to => "devise/sessions#destroy"
+  end
 
-  resources :posts
+ # devise_for :admins, :path => '', :path_names => { :sign_in => "/login", :sign_out => "/logout" }
 
   scope "(:locale)", :locale => /en|es/ do
     match '/:locale' => 'sites#index'
     root :to => 'sites#index'
 
   root :to => 'sites#index', :as => 'index'
+  resources :posts
 
   resource :site do
     get :events
@@ -17,6 +21,11 @@ Wwd::Application.routes.draw do
     get :news
     get :photos
   end
+  end
+
+  namespace :admin do
+    match '/' => 'index#index', :as => 'index'
+    resources :posts
   end
   # The priority is based upon order of creation:
   # first created -> highest priority.
