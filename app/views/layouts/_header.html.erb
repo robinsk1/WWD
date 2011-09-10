@@ -1,0 +1,29 @@
+<div class="grid_12" >
+  <ul id="projnav" style="font-variant:small-caps;">
+    <li>
+      <%= link_to_unless_current(t('house'), house_site_path) do
+      link_to(t('house'), house_site_path, :style=>"color:#fd039c;")
+      end %>
+    </li>
+    <li>
+      <%= link_to_unless_current(t('activities'), activities_site_path) do
+      link_to(t('activities'), activities_site_path, :style=>"color:#fd039c;")
+      end %>
+    </li>
+    <li>
+      <%= link_to_unless_current(t('area'), area_site_path) do
+      link_to(t('area'), area_site_path, :style=>"color:#fd039c;")
+      end %>
+    </li>
+     <li>
+      <%= link_to_unless_current(t('events'), events_site_path) do
+      link_to(t('events'), events_site_path, :style=>"color:#fd039c;")
+      end %>
+    </li>
+  </ul>
+</div>
+
+<div class="clear"></div>
+
+
+

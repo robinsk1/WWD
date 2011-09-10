@@ -1,4 +1,19 @@
 Wwd::Application.routes.draw do
+
+   scope "(:locale)", :locale => /en|es/ do
+    match '/:locale' => 'sites#index'
+    root :to => 'sites#index'
+
+  root :to => 'sites#index', :as => 'index'
+
+  resource :site do
+    get :events
+    get :contact
+    get :activities
+    get :area
+    get :house
+  end
+  end
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
