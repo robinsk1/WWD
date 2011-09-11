@@ -182,6 +182,7 @@ GEM
       capybara (>= 1.0.0)
       rspec-rails (>= 2.5.0)
     syntax (1.0.0)
+    therubyracer-heroku (0.8.1.pre3)
     thin (1.2.11)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
@@ -236,6 +237,7 @@ DEPENDENCIES
   silent-postgres
   steak
   syntax
+  therubyracer-heroku (= 0.8.1.pre3)
   thin
   thumbs_up
   uglifier
