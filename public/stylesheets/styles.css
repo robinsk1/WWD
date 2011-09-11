@@ -340,3 +340,28 @@ a.nivo-prevNav {
     list-style: none;
     display: block;
 }
+
+a:link {
+    color: red;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: red;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: green;
+    text-decoration: underline;
+}
+
+a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+a.banner:link    { color:gray; text-decoration:none; }
+a.banner:visited { color:gray; text-decoration:none; }
+a.banner:hover   { color:gray; text-decoration:none; }
+a.banner:active  { color:gray; text-decoration:none; }
