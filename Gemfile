@@ -24,7 +24,9 @@ gem 'uglifier'
 
 
 
-
+group :production do
+  gem 'therubyracer-heroku', '0.8.1.pre3'
+end
 
 
 group :development, :test do
