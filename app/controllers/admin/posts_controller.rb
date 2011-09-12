@@ -7,7 +7,7 @@ class Admin::PostsController < Admin::ApplicationController
     @posts = Post.all
 
     respond_to do |format|
-      format.html # index.html.erb
+      format.html
       format.json { render json: @posts }
     end
   end
@@ -46,7 +46,7 @@ class Admin::PostsController < Admin::ApplicationController
 
     respond_to do |format|
       if @post.save
-        format.html { redirect_to @post, notice: 'Post was successfully created.' }
+        format.html { redirect_to admin_posts_path, notice: 'Post was successfully created.' }
         format.json { render json: @post, status: :created, location: @post }
       else
         format.html { render action: "new" }
@@ -62,7 +62,7 @@ class Admin::PostsController < Admin::ApplicationController
 
     respond_to do |format|
       if @post.update_attributes(params[:post])
-        format.html { redirect_to @post, notice: 'Post was successfully updated.' }
+        format.html { redirect_to admin_post_path(@post), notice: 'Post was successfully updated.' }
         format.json { head :ok }
       else
         format.html { render action: "edit" }
@@ -78,7 +78,7 @@ class Admin::PostsController < Admin::ApplicationController
     @post.destroy
 
     respond_to do |format|
-      format.html { redirect_to posts_url }
+      format.html { redirect_to admin_posts_url }
       format.json { head :ok }
     end
   end

@@ -15,7 +15,7 @@ gem 'pg'
 gem 'thumbs_up'
 #gem 'gravtastic'
 gem "oa-oauth", :require => "omniauth/oauth"
-gem "ckeditor"
+gem "ckeditor", "~> 3.6.0"
 gem "formtastic"
 gem "unicorn"
 gem 'sass'

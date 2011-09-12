@@ -214,7 +214,7 @@ DEPENDENCIES
   acts_as_commentable
   aws-s3
   capybara
-  ckeditor
+  ckeditor (~> 3.6.0)
   coffee-script
   database_cleaner
   devise

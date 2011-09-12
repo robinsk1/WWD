@@ -1,4 +1,8 @@
-<%= form_for(@post) do |f| %>
+<%= javascript_include_tag "/javascripts/ckeditor/ckeditor.js" %>
+<%#= javascript_include_tag :ckeditor %>
+
+
+<%= form_for([:admin, @post]) do |f| %>
   <% if @post.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@post.errors.count, "error") %> prohibited this post from being saved:</h2>
@@ -17,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= f.cktext_area :content, :toolbar => 'Full', :width => 1000, :height => 400 %>
   </div>
   <div class="actions">
     <%= f.submit %>

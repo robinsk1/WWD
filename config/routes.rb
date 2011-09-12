@@ -6,13 +6,9 @@ Wwd::Application.routes.draw do
   end
 
  # devise_for :admins, :path => '', :path_names => { :sign_in => "/login", :sign_out => "/logout" }
-
-  scope "(:locale)", :locale => /en|es/ do
-    match '/:locale' => 'sites#index'
-    root :to => 'sites#index'
-
   root :to => 'sites#index', :as => 'index'
-  resources :posts
+
+  resources :posts, :only => [:show, :index]
 
   resource :site do
     get :events
@@ -21,12 +17,14 @@ Wwd::Application.routes.draw do
     get :news
     get :photos
   end
-  end
 
   namespace :admin do
-    match '/' => 'index#index', :as => 'index'
     resources :posts
   end
+
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -84,4 +82,4 @@ Wwd::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 
-end
+
