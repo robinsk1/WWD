@@ -1,12 +1,13 @@
 Wwd::Application.routes.draw do
 
+
+
   devise_for :admins do
     get "/login", :to => "devise/sessions#new"
     get "/logout", :to => "devise/sessions#destroy"
   end
 
  # devise_for :admins, :path => '', :path_names => { :sign_in => "/login", :sign_out => "/logout" }
-  root :to => 'sites#index', :as => 'index'
 
   resources :posts, :only => [:show, :index]
 
@@ -19,8 +20,13 @@ Wwd::Application.routes.draw do
   end
 
   namespace :admin do
+    match '/' =>  'index#index'
     resources :posts
   end
+
+
+  root :to => "sites#index" , :as => 'index'
+  match '/' => "sites#index"
 
   end
 

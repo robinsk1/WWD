@@ -18,6 +18,5 @@ class SitesController < ApplicationController
   def events
   end
 
-  
 
 end
