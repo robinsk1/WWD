@@ -21,6 +21,7 @@ gem "unicorn"
 gem 'sass'
 gem 'coffee-script'
 gem 'uglifier'
+gem 'tabs_on_rails'
 
 
 

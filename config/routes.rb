@@ -13,9 +13,7 @@ Wwd::Application.routes.draw do
 
   resource :site do
     get :events
-    get :contact
-    get :activities
-    get :news
+    get :about
     get :photos
   end
 

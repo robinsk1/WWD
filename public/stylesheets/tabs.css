@@ -1,0 +1,120 @@
+#projnav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 2px silver;
+    -moz-border-radius: 0px 0px 8px 0px;
+    -webkit-border-radius: 0px 0px 8px 0px;
+    -opera-border-radius: 0px 0px 8px 0px;
+    -khtml-border-radius: 0px 0px 8px 0px;
+
+}
+
+#projnav span ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+#projnav li {
+    float: left;
+    padding:2px;
+
+}
+
+#projnav li.current {
+    padding:6px;
+    display: block;
+    width: 120px;
+    height: auto;
+    font-weight: bolder;
+    color: #000000;
+    background-color: #ff9900;
+    text-align: center;
+    font-size: 8pt;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px silver;
+    -moz-border-radius: 0px 0px 8px 0px;
+    -webkit-border-radius: 0px 0px 8px 0px;
+    -opera-border-radius: 0px 0px 8px 0px;
+    -khtml-border-radius: 0px 0px 8px 0px;
+    border-radius: 0px 0px 8px 0px;
+}
+
+#projnav span li {
+    float: left;
+    padding: 2px;
+}
+
+
+#projnav a {
+    display: block;
+    width: 120px;
+    height: auto;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #000000;
+    text-align: center;
+    font-size: 8pt;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: 2px silver;
+    -moz-border-radius: 0px 0px 8px 0px;
+    -webkit-border-radius: 0px 0px 8px 0px;
+    -opera-border-radius: 0px 0px 8px 0px;
+    -khtml-border-radius: 0px 0px 8px 0px;
+    border-radius: 0px 0px 8px 0px;
+}
+
+#projnav span a {
+/*display:block;*/
+    width: 200px; /*height:16px;*/
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 16pt;
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+#projnav a:link img, #projnav a:hover img, #projnav a:active img {
+    border: none;
+    background-color: #e5e5e6;
+    border: 2px silver;
+    -moz-border-radius: 0px 0px 8px 0px;
+    -webkit-border-radius: 0px 0px 8px 0px;
+    -opera-border-radius: 0px 0px 8px 0px;
+    -khtml-border-radius: 0px 0px 8px 0px;
+    border-radius: 0px 0px 8px 0px;
+
+}
+
+#projnav span a:link img, #projnav span a:hover img, #projnav span a:active img {
+    border: none;
+    background-color: #ffffff;
+
+}
+
+#projnav a:hover, #projnav a:active {
+/*background-color:#ffffff;*/
+    background-color: #282c1b;
+    border: 1px none black; /*color:#000000;*/
+    -moz-border-radius: 0px 0px 8px 0px;
+    -webkit-border-radius: 0px 0px 8px 0px;
+    -opera-border-radius: 0px 0px 8px 0px;
+    -khtml-border-radius: 0px 0px 8px 0px;
+    border-radius: 0px 0px 8px 0px;
+}
+
+#projnav span a:hover, #projnav span a:active {
+    background-color: #ffffff;
+
+}
+

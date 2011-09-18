@@ -1,12 +1,7 @@
-
-
+<br/> <br/>
 <% @posts.each do |post| %>
-
-    <p><%= post.title %></p>
-
+    <p><%= link_to post.title, post_path(post) %></p>
     <p><%= raw post.content %></p>
-    <td><%= link_to 'Show', post_path(post) %></td>
-
 <% end %>
 
 

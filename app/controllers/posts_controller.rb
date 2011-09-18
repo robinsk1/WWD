@@ -1,6 +1,8 @@
   class PostsController < ApplicationController
   # GET /posts
   # GET /posts.json
+    set_tab :news
+
   def index
     @posts = Post.all
 
