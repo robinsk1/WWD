@@ -193,15 +193,15 @@ table.users tr td {
 }
 
 .slider_back p {
-    margin-left:10px;
+    margin-left:0;
     font-weight:bolder;
     font-size:15px;
 }
 
 #slider {
     position:relative;
-    width:940px; /* Change this to your images width */
-    height:200px; /* Change this to your images height */
+    width:740px; /* Change this to your images width */
+    height:159px; /* Change this to your images height */
     background:url(/images/ajax-loader.gif) no-repeat 50% 50%;
 }
 #slider img {

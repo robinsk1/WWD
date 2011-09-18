@@ -10,11 +10,14 @@
 <div class="wrapper">
 <div class="container_12">
 <div class="grid_12" style="height:20px;"></div>
-<div class="grid_10" style="min-height:60px;"> <%= link_to image_tag('wwd-logo.png'), index_path %>  </div>
-<div class="grid_12" style="height:20px;"></div>
-<div class="grid_2 lang_menu">
- <!-- <%#= link_to "ESP", root_path(:locale => 'es') %> |  <%#= link_to 'ENG',  root_path(:locale => 'en') %> -->
+<div class="grid_9" style="min-height:60px;padding-left: 0;margin: 0;">
+<%= render :partial => 'sites/slider' %>
 </div>
+<div class="grid_3 lang_menu" style="z-index: 1000">
+<%= link_to image_tag('wwd-logo.png'), index_path %>
+</div>
+
+<div class="grid_12" style="height:20px;"></div>
 <div class="clear"></div>
   <%= render :partial => 'layouts/header' %>
   <div class="notice"><%= notice %></div>
